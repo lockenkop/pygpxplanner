@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pygpxplanner"
+authors = [
+    {name = "Jonas Fenchel", email = "locken.kop@web.de"}
+]
+maintainers = [
+    {name = "Jonas Fenchel", email = "locken.kop@web.de"}
+]
+description = "pygpxplanner"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+  "pygpx",
+  "requests",
+  "ip2geotools",
+  "pygpx",
+  "tkintermapview",
+]
+requires-python = ">= 3.8"
+
+[project.gui-scripts]
+spam-gui = "pygpxplanner:main_gui"
